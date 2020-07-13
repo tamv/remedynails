@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:remedynails/pages/edit_profile.dart';
+import 'package:remedynails/pages/home_page.dart';
 import 'package:remedynails/pages/signin_page.dart';
 import 'package:remedynails/pages/signup_page.dart';
 
@@ -15,11 +16,12 @@ class MyApp extends StatelessWidget {
       title: 'PreMade WIP',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
-      home: EditProfilePage(),
+      home: HomePage(),
       routes: {
         SignInPage.pageId: (context) => SignInPage(),
         SignUpPage.pageId: (context) => SignUpPage(),
-        EditProfilePage.pageId: (context) => EditProfilePage()
+        EditProfilePage.pageId: (context) => EditProfilePage(),
+        HomePage.pageId: (context) => HomePage()
       }
     );
   }
